@@ -7,7 +7,6 @@
 
 main.flex{
   gap: 2.64rem;
-  color: var(--title);
   align-items: start;
 }
 
@@ -21,7 +20,6 @@ main section.left-section.flex{
 
 }
 main section.left-section.flex button{
-  color: var(--title);
   background-color: rgba(36, 37, 46, 1);
   width: 10rem;
   padding: 0.75rem 0;
@@ -37,6 +35,9 @@ main section.left-section.flex button.active{
   padding: 0.8rem 0;
   border: 1px solid var(--blue);
   border-radius: 5px;
+}
+.light main section.left-section.flex button.active{
+  border: 1px solid #000;
 }
 
 main section.left-section.flex button:hover{
@@ -60,12 +61,13 @@ main section.left-section.flex button:hover{
     2. right Section ==> Cards
 =========================== */
 main section.right-section.flex{
-  /*flex-grow: 1;*/
+  flex-grow: 1;
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
 }
 .card{
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(93, 188, 252, 0.3);
   border-radius: 5px;
   transition: 0.3s;
@@ -74,11 +76,18 @@ main section.right-section.flex{
     rgba(255, 255, 255, 0.05)
   );
 }
+.light .card{
+  border: none;
+}
 .card:hover{
   border: 1px solid var(--blue);
+  background-color: rgba(215, 215, 220, 0.3);
   rotate: 1deg;
   scale: 1.01;
   cursor: pointer;
+}
+.light .card:hover{
+  border: none;
 }
 .card img{
   border-radius: 5px;
@@ -89,6 +98,7 @@ main section.right-section.flex{
 }
 .card .box .title{
   color: var(--title);
+  text-transform: capitalize;
   
 }
 .card .box .subtitle{
