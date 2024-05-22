@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "@formspree/react": "^2.5.1",
+    "framer-motion": "^11.2.6",
+    "lottie-react": "^2.4.0",
     "preact": "^10.19.6"
   },
   "devDependencies": {

@@ -66,3 +66,7 @@ section.hero .all-icons .icon:hover{
 /* =================================
     3. Right Section ==> Animation
 ==================================== */
+.animation{
+  width: 100%;
+  translate: 5px 55px;
+}

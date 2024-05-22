@@ -130,7 +130,14 @@ button:active{
 .scroll2Top:hover {
   background-color: rgb(25, 118, 210);
 }
-
+@media (max-width: 1200px){
+  .emailAnimation{
+    display: none;
+  }
+  .emailAnimation{
+    display: none;
+  }
+}
 @media (max-width: 1000px){
   .container{
     --container-padding: 1.7rem;
@@ -141,6 +148,7 @@ button:active{
     width: calc(100% + var(--container-padding) + var(--container-padding));
     margin-left: calc(var(--container-padding) * -1); 
   }
+
 }
 
 @media (max-width: 700px){

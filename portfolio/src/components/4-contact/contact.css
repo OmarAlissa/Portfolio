@@ -30,9 +30,10 @@ section.contact-us .subtitle {
 
 section.contact-us label {
   color: var(--subtitle);
+  width: 100%;
+  
 
 }
-
 section.contact-us #email,
 section.contact-us #message {
   all: unset;
@@ -45,8 +46,12 @@ section.contact-us #message {
   transition: 0.3s;
   font-size: 1.1rem;
 }
+section.contact-us #email{
+  margin-left: 1.38rem;
+}
+
 .light section.contact-us #email,
-section.contact-us #message {
+.light section.contact-us #message {
   background-color: rgba(255, 255, 255, 0.162);
   border: 1px solid rgba(128, 128, 128, 0.451);
   box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
@@ -66,9 +71,12 @@ section.contact-us #message:hover {
 .light section.contact-us #message:hover {
   border: 1px solid rgb(78, 80, 80);
 }
-
+section.contact-us #email{
+  min-width: 12rem;
+}
 section.contact-us #message {
   min-height: 9rem;
+  min-width: 12rem;
   resize: vertical;
 }
 
@@ -93,7 +101,12 @@ section.contact-us .submit:hover {
 /* ========================
     2. Right Section ==> Animation
 =========================== */
+.emailAnimation{
+  height: 400px;
+  width: 100%;
+  translate: 75px -80px;
 
+}
 
 
 /* ====================================
