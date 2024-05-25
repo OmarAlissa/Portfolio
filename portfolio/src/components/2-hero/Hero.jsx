@@ -3,38 +3,47 @@ import './hero.css';
 import Lottie from "lottie-react";
 // @ts-ignore
 import heroAnimation from '../../animation/hero.json';
+
+
+// <div className="icon icon-twitter"></div>
 const Hero = () => {
   const lootieRef = useRef();
   return (
     <section className='hero flex'>
       <div className='left-section'>
         <div className="parent-avatar flex">
-          <img src='./b.png' className='avatar' alt='' />
+          <img src='./images/profile.png' className='avatar' alt='' />
           <div className='icon-verified'></div>
         </div>
-        <h1 className='title'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <h1 className='title'>Wirtschaftsinformatik Student, Python Enthusiast, and React Developer.</h1>
         <p className='subtitle'>
-          Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-          numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-          optio, eaque rerum! Provident similique accusantium nemo autem.
+          I am Omar Alissa, a Wirtschaftsinformatik student from Um.
+          I am passionate about learning new technologies and currently focused on experimenting with Python and React.
+          My dedication to software development drives me to continually expand my skills and explore new possibilities.
         </p>
         <div className='all-icons flex'>
-          <div className="icon icon-twitter"></div>
-          <div className="icon icon-instagram"></div>
-          <div className="icon icon-github"></div>
-          <div className="icon icon-linkedin"></div>
+          <a href="https://www.instagram.com/omar_alissa963" target="_blank" rel="noopener noreferrer">
+            <div className="icon icon-instagram"></div>
+          </a>
+
+          <a href="https://github.com/OmarAlissa?tab=repositories" target="_blank" rel="noopener noreferrer">
+        <div className="icon icon-github"></div>
+      </a>
+      <a href="https://www.linkedin.com/in/omar-alissa-a8a244301" target="_blank" rel="noopener noreferrer">
+        <div className="icon icon-linkedin"></div>
+      </a>
         </div>
       </div>
 
       <div className='right-section animation'>
-      <Lottie animationData={heroAnimation} 
-        className='emailAnimation'
-        lottieRef={lootieRef}
-        onLoadedImages={() => {
-          // @ts-ignore
-          // https://lottiereact.com/
-          lootieRef.current.setSpeed(0.5)
-      }}/>
+        <Lottie animationData={heroAnimation}
+          className='emailAnimation'
+          lottieRef={lootieRef}
+          onLoadedImages={() => {
+            // @ts-ignore
+            // https://lottiereact.com/
+            lootieRef.current.setSpeed(0.5)
+          }} />
       </div>
     </section>
   );

@@ -80,8 +80,7 @@ const Main = () => {
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.projectTitle}</h1>
                   <p className="sub-title">
-                    Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                    tempore dolor in, accusantium laudantium accusamus.
+                  {item.des}
                   </p>
 
                   <div className="flex icons">
@@ -90,13 +89,13 @@ const Main = () => {
                       <div className="icon-github"></div>
                     </div>
 
-                    <a className="link flex" href="">
+                    {/*<a className="link flex" href="">
                       more
                       <span
                         style={{ alignSelf: "end" }}
                         className="icon-arrow-right"
                       ></span>
-                    </a>
+            </a>*/}
                   </div>
                 </div>
               </motion.article>
