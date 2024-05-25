@@ -13,10 +13,7 @@ const Footer = () => {
           <a href="">Projects</a>
         </li>
         <li>
-          <a href="">Speaking</a>
-        </li>
-        <li>
-          <a href="">Uses</a>
+          <a href="">Contact</a>
         </li>
       </ul>
       <p>© 2023 Spencer Sharp. All rights reserved.</p>

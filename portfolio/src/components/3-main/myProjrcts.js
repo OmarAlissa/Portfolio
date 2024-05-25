@@ -7,41 +7,32 @@ export const myProjects = [
     githab: "",
   },
   {
-    projectTitle: "react & css project",
+    projectTitle: "Death Note Website",
     des: "This HTML & CSS page is inspired by the anime Death Note.",
-    category: ["react", "css"],
+    category: ["Html", "css"],
     imgPath: "./images/deathNote.png",
     githab: "",
   },
-  { projectTitle: "css project", 
-    category: ["css"], 
+  { projectTitle: "Movie Analysis", 
+    category: ["python"], 
     des:"This is a Streamlit app for data dashboarding for a movie list.",
-    imgPath: "./images/dashboard.png" },
-  {
-    projectTitle: "react project",
-    category: ["react"],
-    imgPath: "./images/4.jpg",
+    imgPath: "./images/dashboard.png" 
   },
-  { projectTitle: "css project", category: ["css"], imgPath: "./images/5.jpg" },
+  { projectTitle: "Chat With Pdfs", 
+    category: ["python"], 
+    des:"This is a Streamlit app for conversational PDF interaction empowered by the OpenAI API, RAG, and LangChain.",
+    imgPath: "./images/chatWithPdf.png" 
+  },
+  { projectTitle: "Income calculator", 
+    category: ["java"], 
+    des:"This is a small income calculator program built with Java Swing.",
+    imgPath: "./images/einnahmeRechner.png" 
+  },
 
-  {
-    projectTitle: "javaScript project",
-    category: ["js"],
-    imgPath: "./images/6.jpg",
+  { projectTitle: "Depreciation Calculator", 
+    category: ["java"], 
+    des:"This is a small Java Swing program designed to calculate annual depreciation.",
+    imgPath: "./images/abschreibung.png" 
   },
-  {
-    projectTitle: "node project",
-    category: ["node"],
-    imgPath: "./images/7.jpg",
-  },
-  {
-    projectTitle: "node project",
-    category: ["node"],
-    imgPath: "./images/8.jpg",
-  },
-  {
-    projectTitle: "javaScript project",
-    category: ["js"],
-    imgPath: "./images/9.jpg",
-  },
+
 ];

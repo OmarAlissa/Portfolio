@@ -43,22 +43,22 @@ const Main = () => {
           HTML & CSS
         </button>
         <button onClick={() => {
-          handleClick("javaScript");
+          handleClick("java");
         }}
-          className={currentActive === "javaScript" ? "active" : null}>
-          JavaScript
+          className={currentActive === "java" ? "active" : null}>
+          Java
         </button>
         <button onClick={() => {
           handleClick("react");
         }}
           className={currentActive === "react" ? "active" : null}>
-          React & MUI
+          React
         </button>
         <button onClick={() => {
-          handleClick("node");
+          handleClick("python");
         }}
-          className={currentActive === "node" ? "active" : null}>
-          Node & Express
+          className={currentActive === "python" ? "active" : null}>
+          Python
         </button>
       </section>
 
