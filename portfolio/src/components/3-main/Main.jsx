@@ -9,13 +9,14 @@ const Main = () => {
   const [arr, setArr] = useState(myProjects);
   const handleClick = (btnCategory) => {
     setcurrentActive(btnCategory);
-          const newArr = myProjects.filter((item) => { 
-            const catFilter = item.category.find((cat) => {
-              return cat === btnCategory
-            });
+    const newArr = myProjects.filter((item) => {
+      const catFilter = item.category.find((cat) => {
+        return cat === btnCategory
+      });
 
-            return catFilter === btnCategory});
-          setArr(newArr);
+      return catFilter === btnCategory
+    });
+    setArr(newArr);
   };
 
   return (
@@ -29,13 +30,13 @@ const Main = () => {
           All Projects
         </button>
         <button onClick={() => {
-          
-            {/*const catFilter = item.category.filter((cat) => {
+
+          {/*const catFilter = item.category.filter((cat) => {
               return cat === "css"
             })
           return catFilter[0] === "css"}*/}
 
-            handleClick("css");         
+          handleClick("css");
         }}
           className={currentActive === "css" ? "active" : null}
 
@@ -64,7 +65,7 @@ const Main = () => {
 
       <section className='right-section flex'>
 
-      <AnimatePresence>
+        <AnimatePresence>
           {arr.map((item) => {
             return (
               <motion.article
@@ -80,13 +81,13 @@ const Main = () => {
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.projectTitle}</h1>
                   <p className="sub-title">
-                  {item.des}
+                    {item.des}
                   </p>
 
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
-                      <div className="icon-link"></div>
-                      <div className="icon-github"></div>
+                      <div className="icon-link" onClick={() => window.open(item.link)}></div>
+                      <div className="icon-github" onClick={() => window.open(item.github)}></div>
                     </div>
 
                     {/*<a className="link flex" href="">
